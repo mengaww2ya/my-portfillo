@@ -25,10 +25,9 @@
   }
 
   .batry {
-    padding-left: 100px;
     padding-top: 0%;
     float: right;
-    margin-left: 25%;
+    margin-left: 15%;
   }
 
   .time {
@@ -257,5 +256,227 @@ padding-left: 200px;
 
   .top_bar {
     display: flex;
+
+    .logodesk {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .body1 {
+    padding: 114px 24px 127px 24px;
+    width: 1440px;
+    height: 918px;
+  }
+
+  .head {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    color: #091e42;
+    background: none;
+  }
+
+  .logodesk {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 111%;
+    text-align: center;
+    color: #6070ff;
+    width: 70px;
+    height: auto;
+    float: left;
+    margin-right: 50%;
+  }
+
+  .intro {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #344563;
+  }
+
+  .deskimges_up {
+    width: 1256px;
+    height: 268px;
+    background:
+      url(svg/Ellipse\ 3.png) no-repeat right top,
+      url(svg/Rectangle\ 4.png) no-repeat right top,
+      url(svg/Ellipse\ 14.svg) no-repeat center bottom,
+      url(svg/Ellipse\ 8.svg) no-repeat center top,
+      url(svg/Ellipse\ 11.svg) no-repeat top left,
+      url(rectangl6.png) no-repeat top left,
+      url(svg/Ellipse\ 5.svg) no-repeat top center,
+      url(svg/rectangl7.png) no-repeat top center,
+      url(svg/Ellipse\ 8.svg) no-repeat top center;
+
+    /*
+     ;
+  */
+  }
+
+  .content_desk {
+    width: 920px;
+    height: 268px;
+    margin-left: 15%;
+  }
+
+  .buttomdesk {
+    width: 920px;
+    height: 268px;
+    background:
+      url(svg/Ellipse\ 12.svg) no-repeat top right,
+      url(svg/Ellipse\ 13.svg) no-repeat top right calc(4% - 2px),
+      url(svg/Ellipse\ 4.svg) no-repeat center right calc(20% - 30px),
+      url(svg/rectangle5.png) no-repeat center right,
+      url(svg/Ellipse\ 15.png) no-repeat center left;
+  }
+
+  .bottom_section {
+    display: none;
+  }
+
+  .last_bottom {
+    display: none;
+  }
+
+  .div3_4 {
+    float: right;
+  }
+
+  .l9 {
+    border-radius: 100%;
+    fill: #6070ff;
+  }
+
+  .elp3 {
+    border-radius: 100%;
+    fill: #6070ff;
+    padding-left: 350px;
+    padding-top: 0%;
+    border-top: 0;
+  }
+
+  .elp15 {
+    border-radius: 100%;
+    fill: #6070ff;
+    padding-top: 100px;
+  }
+
+  .elp14 {
+    padding-top: 200px;
+    border-radius: 100%;
+    fill: #fff;
+    stroke-width: 1px;
+    stroke: #cbcdff;
+  }
+
+  .elp8 {
+    padding-left: 200px;
+    border-radius: 100%;
+    fill: #fff;
+    stroke-width: 1px;
+    stroke: #cbcdff;
+  }
+
+  .elp11 {
+    display: block;
+    fill: #6070ff;
+  }
+
+  .elp5 {
+    border-radius: 100%;
+    fill: #cbcdff;
+    padding-left: 150px;
+  }
+
+  .elp7 {
+    width: 26px;
+    height: auto;
+  }
+
+  .elp4png {
+    width: 95px;
+    height: auto;
+    padding-left: 300px;
+    float: right;
+    padding-right: 0;
+  }
+
+  .elp6r {
+    width: 51px;
+    height: 9px;
+  }
+
+  .gmail {
+    width: 30px;
+    height: auto;
+    padding-bottom: 1px;
+  }
+
+  .delp4 {
+    border-radius: 100%;
+    fill: #6070ff;
+  }
+
+  .elp5_elp7 {
+    display: flex;
+    padding: 0%;
+  }
+
+  .rect6 {
+    width: 10px;
+    height: auto;
+    background: #ebebff;
+    transform: rotate(46deg);
+  }
+
+  .rect6_el11 {
+    display: flex;
+    padding: 0%;
+  }
+
+  .elp12_13 {
+    background:
+      url(svg/Ellipse\ 12.svg) no-repeat top right,
+      url(svg/Ellipse\ 13.svg) no-repeat top right;
+    width: 30%;   /* 400px */
+    height: 50px;
+    float: right;
+  }
+
+  .status_bar {
+    display: none;
+  }
+
+  .top_bar {
+    display: flex;
+    width: 1440px;
+    height: 72px;
+
+    .batry {
+      display: none;
+    }
+
+    .time {
+      display: none;
+    }
+
+    .option {
+      width: 258px;
+      height: 40px;
+      display: flex;
+      float: right;
+    }
+
+    .logodesk {
+      display: flex;
+      float: left;
+    }
   }
 }
