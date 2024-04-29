@@ -1,8 +1,12 @@
 @media screen and (min-width: 375px) {
   .body1 {
-    padding: 114px 24px 127px 24px;
-    width: 375px;
+    padding: 0 24px 127px 0;
+    width: 100%;
     height: 617px;
+  }
+
+  h2 {
+    color: #6070ff;
   }
 
   .head {
@@ -35,12 +39,49 @@
     float: left;
   }
 
-  .icon {
+  .btn {
     fill: #6070ff;
     border: #fff;
     float: right;
     width: 50px;
     margin-left: 25%;
+    display: inline-block;
+  }
+
+  .btn button {
+    background-color: gray;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn a {
+    display: none;
+    color: rgb(3, 2, 2);
+    text-decoration: none;
+    padding: 5px 5px;
+    font-size: 20px;
+  }
+
+  /* .btn.content{
+  background-color: brown;
+  min-width: 20px;
+  box-shadow: 2px  2px 2px black;
+} */
+  .btn:hover.content {
+    display: block;
+    display: none;
+    display: inline-block;
+  }
+
+  .btn:hover button {
+    background-color: aqua;
+    display: inline-block;
+  }
+
+  .btn a:hover {
+    display: inline-block;
+    background-color: orchid;
   }
 
   .option {
@@ -87,6 +128,10 @@
       url(svg/Ellipse\ 4.svg) no-repeat center right calc(20% - 30px),
       url(svg/rectangle5.png) no-repeat center right,
       url(svg/Ellipse\ 15.png) no-repeat center left;
+  }
+
+  .twit:hover {
+    color: orange;
   }
 
   /* .back2{
@@ -264,10 +309,58 @@ padding-left: 200px;
 }
 
 @media screen and (min-width: 786px) {
+  .twit:hover::before {
+    content: "twiter";
+    display: block;
+    background-color: white;
+    color: gray;
+  }
+
+  .linked:hover::before {
+    content: "linkedin";
+    display: block;
+    background-color: white;
+    color: gray;
+  }
+
+  .medium:hover::before {
+    content: "medium";
+    display: block;
+    background-color: white;
+    color: gray;
+  }
+
+  .gihub:hover::before {
+    content: "github";
+    display: block;
+    background-color: white;
+    color: gray;
+  }
+
+  .angelist:hover::before {
+    content: "angelist";
+    display: block;
+    background-color: white;
+    color: gray;
+  }
+
+  .mail:hover::before {
+    content: "mail";
+    display: block;
+    background-color: white;
+    color: gray;
+  }
+
+  .port:hover,
+  .about:hover,
+  .contat:hover {
+    color: blue;
+  }
+
   .body1 {
-    padding: 114px 24px 127px 24px;
-    width: 1440px;
-    height: 918px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
   }
 
   .head {
@@ -302,22 +395,18 @@ padding-left: 200px;
   }
 
   .deskimges_up {
-    width: 1256px;
+    width: 98%;
     height: 268px;
     background:
       url(svg/Ellipse\ 3.png) no-repeat right top,
-      url(svg/Rectangle\ 4.png) no-repeat right top,
+      url(svg/Rectangle\ 4.png) no-repeat right top calc(-30%),
       url(svg/Ellipse\ 14.svg) no-repeat center bottom,
       url(svg/Ellipse\ 8.svg) no-repeat center top,
       url(svg/Ellipse\ 11.svg) no-repeat top left,
       url(rectangl6.png) no-repeat top left,
       url(svg/Ellipse\ 5.svg) no-repeat top center,
-      url(svg/rectangl7.png) no-repeat top center,
+      url(svg/Rectangle1\ 4.png) no-repeat center top calc(-10%),
       url(svg/Ellipse\ 8.svg) no-repeat top center;
-
-    /*
-     ;
-  */
   }
 
   .content_desk {
@@ -329,23 +418,30 @@ padding-left: 200px;
   .buttomdesk {
     width: 920px;
     height: 268px;
+    padding: 20px;
     background:
-      url(svg/Ellipse\ 12.svg) no-repeat top right,
-      url(svg/Ellipse\ 13.svg) no-repeat top right calc(4% - 2px),
-      url(svg/Ellipse\ 4.svg) no-repeat center right calc(20% - 30px),
-      url(svg/rectangle5.png) no-repeat center right,
-      url(svg/Ellipse\ 15.png) no-repeat center left;
+      url(svg/Ellipse\ 13.svg) no-repeat bottom left calc(10% - 5px),
+      url(svg/Ellipse\ 12.svg) no-repeat bottom left calc(10% + 20px),
+      url(svg/Ellipse\ 4.svg) no-repeat bottom right calc(2% + 60px),
+      url(svg/rectangle5.png) no-repeat bottom right calc(5%),
+      url(svg/Ellipse\ 15.png) no-repeat center right;
   }
 
   .bottom_section {
     display: none;
+    background: none;
   }
 
   .last_bottom {
     display: none;
+    background: none;
   }
 
-  .div3_4 {
+  .socio_m {
+    margin-left: 50px;
+  }
+
+  /* .div3_4 {
     float: right;
   }
 
@@ -411,7 +507,7 @@ padding-left: 200px;
   .elp6r {
     width: 51px;
     height: 9px;
-  }
+  } */
 
   .gmail {
     width: 30px;
@@ -455,9 +551,9 @@ padding-left: 200px;
   }
 
   .top_bar {
-    display: flex;
-    width: 1440px;
-    height: 72px;
+    display: block;
+    width: 100%;
+    height: 50px;
 
     .batry {
       display: none;
@@ -470,7 +566,7 @@ padding-left: 200px;
     .option {
       width: 258px;
       height: 40px;
-      display: flex;
+      display: inline;
       float: right;
     }
 
