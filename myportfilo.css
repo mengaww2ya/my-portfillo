@@ -5,6 +5,18 @@
     height: 100%;
   }
 
+  .btn a {
+    display: none;
+    color: rgb(3, 2, 2);
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .socio_m a:hover {
+    background-color: blue;
+    color: white;
+  }
+
   h2 {
     color: #6070ff;
   }
@@ -35,14 +47,6 @@
     float: right;
     width: 50px;
     margin-left: 25%;
-    display: inline-block;
-  }
-
-  .btn a {
-    display: none;
-    color: rgb(3, 2, 2);
-    text-decoration: none;
-    font-size: 20px;
   }
 
   .btn:hover .content {
@@ -88,7 +92,7 @@
 
   .bottom_section {
     width: 400px;
-    height: 150px;
+    height: 100px;
     background:
 
       url(svg/Ellipse\ 12.svg) no-repeat top right,
@@ -97,16 +101,16 @@
 
   .last_bottom {
     width: 300px;
-    height: 150px;
+    height: 100px;
     background:
       url(svg/Ellipse\ 4.svg) no-repeat center right calc(20% - 30px),
       url(svg/rectangle5.png) no-repeat center right,
       url(svg/Ellipse\ 15.png) no-repeat center left;
   }
 
-  .twit:hover {
+  /* .twit:hover {
     color: orange;
-  }
+  } */
 
   .div3_4 {
     float: right;
@@ -232,48 +236,6 @@
 }
 
 @media screen and (min-width: 786px) {
-  .twit:hover::before {
-    content: "twiter";
-    display: block;
-    background-color: white;
-    color: gray;
-  }
-
-  .linked:hover::before {
-    content: "linkedin";
-    display: block;
-    background-color: white;
-    color: gray;
-  }
-
-  .medium:hover::before {
-    content: "medium";
-    display: block;
-    background-color: white;
-    color: gray;
-  }
-
-  .gihub:hover::before {
-    content: "github";
-    display: block;
-    background-color: white;
-    color: gray;
-  }
-
-  .angelist:hover::before {
-    content: "angelist";
-    display: block;
-    background-color: white;
-    color: gray;
-  }
-
-  .mail:hover::before {
-    content: "mail";
-    display: block;
-    background-color: white;
-    color: gray;
-  }
-
   .port:hover,
   .about:hover,
   .contat:hover {
@@ -319,7 +281,7 @@
 
   .deskimges_up {
     width: 98%;
-    height: 268px;
+    height: 150px;
     background:
       url(svg/Ellipse\ 3.png) no-repeat right top,
       url(svg/Rectangle\ 4.png) no-repeat right top calc(-30%),
@@ -330,14 +292,14 @@
   }
 
   .content_desk {
-    width: 920px;
-    height: 268px;
+    width: 70%;
+    height: 100%;
     margin-left: 15%;
   }
 
   .buttomdesk {
-    width: 920px;
-    height: 268px;
+    width: 80%;
+    height: 200px;
     padding: 20px;
     background:
       url(svg/botom1.png) no-repeat bottom left calc(20%),
@@ -356,7 +318,7 @@
   }
 
   .socio_m {
-    margin-left: 50px;
+    margin-left: 10%;
   }
 
   .delp4 {
@@ -386,7 +348,7 @@
       url(svg/Ellipse\ 12.svg) no-repeat top right,
       url(svg/Ellipse\ 13.svg) no-repeat top right;
     width: 30%;   /* 400px */
-    height: 50px;
+    height: 100%;
     float: right;
   }
 
@@ -397,19 +359,11 @@
   .top_bar {
     display: block;
     width: 100%;
-    height: 50px;
-
-    .batry {
-      display: none;
-    }
-
-    .time {
-      display: none;
-    }
+    height: 110%;
 
     .option {
-      width: 258px;
-      height: 40px;
+      width: 20%;
+      height: 100%;
       display: inline;
       float: right;
     }
@@ -418,5 +372,10 @@
       display: flex;
       float: left;
     }
+  }
+
+  .socio_m a:hover {
+    background-color: blue;
+    color: white;
   }
 }
