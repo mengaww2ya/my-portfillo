@@ -22,7 +22,7 @@
       url(svg/Ellipse\ 14.svg) no-repeat center bottom,
       url(svg/Ellipse\ 8.svg) no-repeat center top,
       url(svg/Ellipse\ 11.svg) no-repeat top left,
-      url(rectangl6.png) no-repeat top left,
+      url(rectangl6.png) no-repeat top left calc(20%),
       url(svg/Ellipse\ 5.svg) no-repeat top center,
       url(svg/rectangl7.png) no-repeat top center,
       url(svg/Ellipse\ 8.svg) no-repeat top center;
@@ -37,7 +37,10 @@
   .time {
     margin-right: 50%;
     float: left;
+    font-size: 20px;
   }
+
+  /* am trying to make hovver butoon option */
 
   .btn {
     fill: #6070ff;
@@ -48,40 +51,24 @@
     display: inline-block;
   }
 
-  .btn button {
-    background-color: gray;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-  }
-
   .btn a {
     display: none;
     color: rgb(3, 2, 2);
     text-decoration: none;
-    padding: 5px 5px;
     font-size: 20px;
   }
 
-  /* .btn.content{
-  background-color: brown;
-  min-width: 20px;
-  box-shadow: 2px  2px 2px black;
-} */
-  .btn:hover.content {
+  .btn:hover .content {
     display: block;
-    display: none;
-    display: inline-block;
   }
 
-  .btn:hover button {
-    background-color: aqua;
+  .btn:hover a {
     display: inline-block;
+    background-color: white;
   }
 
   .btn a:hover {
-    display: inline-block;
-    background-color: orchid;
+    background-color: orangered;
   }
 
   .option {
@@ -107,7 +94,7 @@
   .intro {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 150%;
     color: #344563;
   }
