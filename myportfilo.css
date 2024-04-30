@@ -2,7 +2,7 @@
   .body1 {
     padding: 0 24px 127px 0;
     width: 100%;
-    height: 617px;
+    height: 100%;
   }
 
   h2 {
@@ -22,23 +22,12 @@
       url(svg/Ellipse\ 14.svg) no-repeat center bottom,
       url(svg/Ellipse\ 8.svg) no-repeat center top,
       url(svg/Ellipse\ 11.svg) no-repeat top left,
-      url(rectangl6.png) no-repeat top left calc(20%),
+      url(rectangl6.png) no-repeat top left,
       url(svg/Ellipse\ 5.svg) no-repeat top center,
       url(svg/rectangl7.png) no-repeat top center,
       url(svg/Ellipse\ 8.svg) no-repeat top center;
   }
 
-  .batry {
-    padding-top: 0%;
-    float: right;
-    margin-left: 15%;
-  }
-
-  .time {
-    margin-right: 50%;
-    float: left;
-    font-size: 20px;
-  }
 
   /* am trying to make hovver butoon option */
 
@@ -121,15 +110,6 @@
     color: orange;
   }
 
-  /* .back2{
-  width: 95px;
-  height: auto;
-  background-image:url(svg/Rectangle\ 4.png);
-  background-repeat: no-repeat;
-  background-position: right;
-
-}
-*/
   .div3_4 {
     float: right;
   }
@@ -183,24 +163,6 @@
     fill: #6070ff;
   }
 
-  /* .elp12 {
-  fill: #6070ff;
-  padding-left: 250px;
-}
-
-.elp13 {
-  border-radius: 100%;
-  fill: #ebebff;
-padding-left: 200px;
-} */
-
-  /* .elp4 {
-  border-radius: 100%;
-  fill: #6070ff;
-  padding-left: 200px;
-  padding-top: 200px;
-} */
-
   .elp5 {
     border-radius: 100%;
     fill: #cbcdff;
@@ -211,15 +173,6 @@ padding-left: 200px;
     width: 26px;
     height: auto;
   }
-
-  /* .elp5png {
-  width: 68px;
-  height: auto;
-  padding-left: 180px;
-  padding-top: 0;
-  padding-bottom: 100px;
-  padding-top: 0%;
-} */
 
   .elp4png {
     width: 95px;
@@ -233,21 +186,6 @@ padding-left: 200px;
     width: 51px;
     height: 9px;
   }
-
-  .gmail {
-    width: 30px;
-    height: auto;
-    padding-bottom: 1px;
-  }
-
-  /* .delp5png {
-  width: 100%;
-  height: auto;
-  background-image: url(svg/Ellipse\ 4.svg);
-  background-size: cover;
-  background-position: center;
-  color: #ebebff;
-} */
 
   .delp4 {
     border-radius: 100%;
@@ -388,12 +326,9 @@ padding-left: 200px;
       url(svg/Ellipse\ 3.png) no-repeat right top,
       url(svg/Rectangle\ 4.png) no-repeat right top calc(-30%),
       url(svg/Ellipse\ 14.svg) no-repeat center bottom,
-      url(svg/Ellipse\ 8.svg) no-repeat center top,
-      url(svg/Ellipse\ 11.svg) no-repeat top left,
-      url(rectangl6.png) no-repeat top left,
-      url(svg/Ellipse\ 5.svg) no-repeat top center,
-      url(svg/Rectangle1\ 4.png) no-repeat center top calc(-10%),
-      url(svg/Ellipse\ 8.svg) no-repeat top center;
+      url(svg/Ellipse\ 8.svg) no-repeat center top calc(-20%),
+      url(svg/topleft.png) no-repeat top left,
+      url(svg/topcenter.png) no-repeat center top;
   }
 
   .content_desk {
@@ -407,11 +342,9 @@ padding-left: 200px;
     height: 268px;
     padding: 20px;
     background:
-      url(svg/Ellipse\ 13.svg) no-repeat bottom left calc(10% - 5px),
-      url(svg/Ellipse\ 12.svg) no-repeat bottom left calc(10% + 20px),
-      url(svg/Ellipse\ 4.svg) no-repeat bottom right calc(2% + 60px),
-      url(svg/rectangle5.png) no-repeat bottom right calc(5%),
-      url(svg/Ellipse\ 15.png) no-repeat center right;
+      url(svg/botom1.png) no-repeat bottom left calc(20%),
+      url(svg/botomleft.png) no-repeat bottom right,
+      url(svg/Ellipse\ 15.png) no-repeat bottom right calc(+50px);
   }
 
   .bottom_section {
@@ -426,80 +359,6 @@ padding-left: 200px;
 
   .socio_m {
     margin-left: 50px;
-  }
-
-  /* .div3_4 {
-    float: right;
-  }
-
-  .l9 {
-    border-radius: 100%;
-    fill: #6070ff;
-  }
-
-  .elp3 {
-    border-radius: 100%;
-    fill: #6070ff;
-    padding-left: 350px;
-    padding-top: 0%;
-    border-top: 0;
-  }
-
-  .elp15 {
-    border-radius: 100%;
-    fill: #6070ff;
-    padding-top: 100px;
-  }
-
-  .elp14 {
-    padding-top: 200px;
-    border-radius: 100%;
-    fill: #fff;
-    stroke-width: 1px;
-    stroke: #cbcdff;
-  }
-
-  .elp8 {
-    padding-left: 200px;
-    border-radius: 100%;
-    fill: #fff;
-    stroke-width: 1px;
-    stroke: #cbcdff;
-  }
-
-  .elp11 {
-    display: block;
-    fill: #6070ff;
-  }
-
-  .elp5 {
-    border-radius: 100%;
-    fill: #cbcdff;
-    padding-left: 150px;
-  }
-
-  .elp7 {
-    width: 26px;
-    height: auto;
-  }
-
-  .elp4png {
-    width: 95px;
-    height: auto;
-    padding-left: 300px;
-    float: right;
-    padding-right: 0;
-  }
-
-  .elp6r {
-    width: 51px;
-    height: 9px;
-  } */
-
-  .gmail {
-    width: 30px;
-    height: auto;
-    padding-bottom: 1px;
   }
 
   .delp4 {
