@@ -2,19 +2,27 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0;
 }
 
 .about_mysef_section ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0;
 }
 
-@media only screen and (min-width: 375px) {
+@media screen and (min-width: 375px) {
   .page1 {
-    padding: 1%;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
+  }
+
+  .body1 {
+    list-style-type: none;
+    padding: 0 24px 127px 0;
+    width: 100%;
+    height: 100%;
   }
 
   .btn a {
@@ -59,7 +67,8 @@
     float: right;
     width: 10px;
     margin-left: 82%;
-    margin-top: 0%;
+    margin-top: 0;
+    padding-top: 0;
     position: fixed;
   }
 
@@ -84,6 +93,10 @@
 
   .icon:hover .option {
     display: block;
+
+    .btn.icon {
+      display: none;
+    }
   }
 
   .logo {
@@ -257,12 +270,7 @@
   .page2 {
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-    padding: 16px;
-    width: 100%;
     background: #fff;
-    display: flex;
-    flex-direction: column;
-    margin-left: 1px;
   }
 
   .title2 {
@@ -274,7 +282,7 @@
   }
 
   .under_titl2 ul {
-    list-style-type: disc;
+    list-style-type: circle;
     display: flex;
     justify-content: start;
     padding-left: 0;
@@ -283,6 +291,7 @@
   .btnseeproject2 {
     width: 100%;
     height: auto;
+    margin: 0 3% 3%;
   }
 
   .page2btn {
@@ -380,6 +389,8 @@
   }
 
   .contact_me {
+    border: 1px solid #cfd8dc;
+    border-radius: 16px;
     background:
       url(images/topright_cont.png) no-repeat top right,
       url(images/contopcenter.png) no-repeat top center;
@@ -413,6 +424,8 @@
     text-align: center;
     color: #6070ff;
     margin: 2% 5%;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
   }
 
   .imagecont {
@@ -439,14 +452,6 @@
     font-size: 32px;
     line-height: 137%;
     color: #172b4d;
-  }
-
-  .under_tonichead {
-    width: 100%;
-  }
-
-  .under_tonichead ul {
-    display: flex;
   }
 
   .imgp3 {
@@ -649,6 +654,8 @@
       float: right;
       position: fixed;
       margin-left: 80%;
+      margin-top: 0;
+      padding-top: 0;
     }
 
     .logodesk {
