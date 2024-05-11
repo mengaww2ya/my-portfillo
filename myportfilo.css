@@ -390,10 +390,10 @@
 
   .contact_me {
     border: 1px solid #cfd8dc;
-    border-radius: 16px;
+    border-radius: 20% 1px 1px 1px;
     background:
-      url(images/topright_cont.png) no-repeat top right,
-      url(images/contopcenter.png) no-repeat top center;
+      url(images/topright_cont.png) no-repeat right top calc(10%),
+      url(images/contopcenter.png) no-repeat center top calc(10%);
     background-color: #6070ff;
   }
 
