@@ -292,6 +292,7 @@
     width: 100%;
     height: auto;
     margin: 0 3% 3%;
+    cursor: pointer;
   }
 
   .page2btn {
@@ -307,6 +308,7 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: #396df2;
+    cursor: pointer;
   }
 
   .imgp2 {
@@ -337,6 +339,7 @@
     width: 162px;
     height: 48px;
     margin: 5% 0 5% 2%;
+    cursor: pointer;
   }
 
   .lang {
@@ -471,6 +474,7 @@
   .btnlun {
     display: flex;
     margin: 3%;
+
   }
 
   .l {
@@ -493,6 +497,7 @@
     border-radius: 8px;
     width: 40%;
     margin: 3%;
+    cursor: pointer;
   }
 
   .btnu2 {
@@ -506,6 +511,7 @@
     border-radius: 8px;
     width: 40%;
     margin: 3%;
+    cursor: pointer;
   }
 
   .btn_b {
