@@ -426,6 +426,7 @@
     margin: 2% 5%;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
+    cursor: pointer;
   }
 
   .imagecont {
