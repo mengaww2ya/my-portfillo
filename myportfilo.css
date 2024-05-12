@@ -69,8 +69,7 @@
     float: right;
     margin-left: 82%;
     margin-top: 0;
-    padding-top: 0;
-    position: fixed;
+    padding-top: 2%;
   }
 
   .btn:hover .content {
@@ -257,7 +256,7 @@
   }
 
   .top_bar {
-    display: flex;
+    display: none;
 
     .logodesk {
       display: none;
