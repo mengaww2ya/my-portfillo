@@ -17,13 +17,7 @@ body {
     height: 100%;
   }
 
- 
 
-
-  .socio_m a:hover {
-    background-color: blue;
-    color: white;
-  }
 
   h2 {
     color: #6070ff;
@@ -47,6 +41,7 @@ body {
       url(svg/rectangl7.png) no-repeat top center,
       url(svg/Ellipse\ 8.svg) no-repeat top center;
   }
+
   .intro {
     font-family: var(--font-family);
     font-weight: 400;
@@ -77,85 +72,93 @@ body {
     float: right;
   }
 
-  .status_bar{
-    .logo {
-      font-family: var(--font-family);
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 111%;
-      color: #6070ff;
-      width: 70px;
-      height: auto;
-      float: left;
-      margin-right: 100%;
-      margin-top: 0;
-      position: fixed;
-    }
-    /* am trying to make hovver butoon option */
-  .icon {
-    fill: #6070ff;
-    border: #fff;
-    margin-left: 82%;
-    position: fixed;
-  } 
-  .optionbtn{
+  .xx {
+    width: 20px;
+    cursor: pointer;
+    background-color: #000;
+  }
+
+  .optionbtn {
     width: 100%;
     height: 40vh;
-    display: flex;
     background-color: #c6cbd6;
     float: right;
     display: none;
-
-    
-
   }
-  .optionbtn ul{
+
+  .optionbtn ul {
     display: block;
     color: white;
     float: right;
     width: 100%;
     flex-direction: column;
-    
   }
-  .optionbtn li{
+
+  .optionbtn li {
     list-style-type: none;
     text-align: center;
   }
-  .optionbtn li a{
+
+  .optionbtn li a {
     text-decoration: none;
     color: rgb(7, 5, 5);
     display: block;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 30px;
   }
-  .optionbtn li:hover{
-    background-color:rgb(194, 144, 9);
-    
+
+  .optionbtn li:hover {
+    background-color: rgb(194, 144, 9);
   }
-  .optionbtn.active{
+
+  .optionbtn.active {
     display: flex;
   }
-  .buton{
-    position: absolute;
-    top: .75rem;
+
+  .buton {
+    position: fixed;
+    top: 0.75rem;
     right: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
     height: 21px;
+    cursor: pointer;
   }
-  .buton .boton{
+
+  .buton .boton {
     height: 3px;
     width: 100%;
     background-color: rgb(10, 38, 197);
     border-radius: 10px;
   }
-  .option {
-    display: none;
-  }
+
   .iconoption {
     width: 20px;
   }
+
+  .logo {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 111%;
+    color: #6070ff;
+    width: 70px;
+    height: auto;
+    float: left;
+    margin-right: 100%;
+    margin-top: 0;
+    position: fixed;
+  }
+
+  .option {
+    display: none;
+  }
+
+  .socio_m a:hover {
+    background-color: blue;
+    color: white;
   }
 
   .l9 {
