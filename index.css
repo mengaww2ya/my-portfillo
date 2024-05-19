@@ -1,18 +1,8 @@
-.my_works_section ul {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
+body {
+  overflow-x: hidden;
 }
 
-.about_mysef_section ul {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-}
-
-@media screen and (min-width: 375px) {
+@media screen  and (min-width: 375px) {
   .page1 {
     border: 1px solid #dfe1e6;
     border-radius: 16px;
@@ -25,6 +15,10 @@
     padding: 0 24px 127px 0;
     width: 100%;
     height: 100%;
+  }
+
+  .iconoption {
+    width: 10px;
   }
 
   .btn a {
@@ -364,16 +358,6 @@
     color: #000;
   }
 
-  .about_myself {
-    border: 1px solid hsl(220, 1%, 59%);
-    border-radius: 16px;
-  }
-
-  .about_myself ul {
-    display: flex;
-    flex-direction: column;
-  }
-
   .bullet {
     border-radius: 100%;
     stroke-width: 1px;
@@ -525,9 +509,16 @@
     width: 80%;
     height: 40px;
   }
+
+  .about_myself ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
 }
 
-@media screen and (min-width: 786px) {
+/* desktop version */
+@media (min-width: 786px) {
   .port:hover,
   .about:hover,
   .contat:hover {
@@ -673,4 +664,76 @@
     background-color: blue;
     color: white;
   }
+
+  .page_flex ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+
+  .about_myself {
+    width: 45%;
+  }
+
+  .about_myself ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .myform {
+    padding: 5% 20% 5% 20%;
+    width: 70%;
+  }
+
+  .works ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    flex-direction: row;
+  }
+
+  .tonic {
+    display: none;
+  }
+
+  .imagecont {
+    display: none;
+  }
+
+  .contact_me {
+    border: 1px solid #cfd8dc;
+    border-radius: 20% 1px 1px 1px;
+    background:
+      url(images/topright_cont.png) no-repeat right top calc(10%),
+      url(images/contopcenter.png) no-repeat center top calc(10%),
+      url(svg/23.png) no-repeat bottom left calc(10%),
+      url(svg/left\ center.png) no-repeat center left,
+      url(svg/right\ center.png) no-repeat right center;
+    background-color: #6070ff;
+  }
+
+  #about {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #pagerevesed ul {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.bullet {
+  width: 30px;
+}
+
+.page_flex ul li {
+  justify-content: space-between;
+}
+
+.my_work_section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
