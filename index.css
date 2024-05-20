@@ -70,18 +70,15 @@ body {
     float: right;
   }
 
-  .xx {
-    width: 20px;
-    cursor: pointer;
-    background-color: #000;
-  }
-
   .optionbtn {
     width: 100%;
-    height: 40vh;
+    height: 100vh;
     background-color: #c6cbd6;
     float: right;
     display: none;
+    position: relative;
+    text-align: end;
+    margin-top: 30px;
   }
 
   .optionbtn ul {
@@ -92,9 +89,10 @@ body {
     flex-direction: column;
   }
 
-  .optionbtn li {
+  .optionbtn ul li {
     list-style-type: none;
     text-align: center;
+    margin-top: 2%;
   }
 
   .optionbtn li a {
@@ -113,10 +111,19 @@ body {
     display: flex;
   }
 
+  .xx {
+    cursor: pointer;
+    width: 30px;
+    height: 21px;
+    top: 15px;
+    right: 15px;
+    position: fixed;
+  }
+
   .buton {
     position: fixed;
-    top: 0.75rem;
-    right: 1rem;
+    top: 15px;
+    right: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -130,6 +137,7 @@ body {
     width: 100%;
     background-color: rgb(10, 38, 197);
     border-radius: 10px;
+    display: flex;
   }
 
   .iconoption {
@@ -646,8 +654,43 @@ body {
     float: right;
   }
 
-  .status_bar {
+  .optionbtn {
+    margin-left: 60%;
+    margin-top: 0%;
+    padding-top: 0%;
+    height: auto;
+    display: inline;
+    position: fixed;
+    flex-direction: row;
+    background-color: white;
+  }
+
+  .logo {
     display: none;
+  }
+
+  .xx {
+    display: none;
+  }
+
+  .buton {
+    display: none;
+  }
+
+  .optionbtn ul {
+    display: inline;
+    display: flex;
+    flex-direction: row;
+    padding-top: 0%;
+    margin-top: 0%;
+  }
+
+  .optionbtn ul li a {
+    display: flex;
+    flex-direction: row;
+    color: #0906d4;
+    padding-top: 0%;
+    margin-top: 0%;
   }
 
   .top_bar {
@@ -656,12 +699,12 @@ body {
     height: 110%;
 
     .option {
-      display: inline;
       float: right;
       position: fixed;
       margin-left: 80%;
       margin-top: 0;
       padding-top: 0;
+      display: none;
     }
 
     .logodesk {
