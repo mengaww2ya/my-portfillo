@@ -76,7 +76,7 @@ body {
     background-color: #c6cbd6;
     float: right;
     display: none;
-    position: relative;
+    position: fixed;
     text-align: end;
     margin-top: 30px;
   }
@@ -122,8 +122,8 @@ body {
 
   .buton {
     position: fixed;
-    top: 15px;
-    right: 15px;
+    top: 20px;
+    right: 35px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -655,7 +655,7 @@ body {
   }
 
   .optionbtn {
-    margin-left: 60%;
+    margin-left: 67%;
     margin-top: 0%;
     padding-top: 0%;
     height: auto;
@@ -665,15 +665,9 @@ body {
     background-color: white;
   }
 
-  .logo {
-    display: none;
-  }
-
-  .xx {
-    display: none;
-  }
-
-  .buton {
+  .logo,
+  .xx,
+  .bullet {
     display: none;
   }
 
@@ -683,6 +677,7 @@ body {
     flex-direction: row;
     padding-top: 0%;
     margin-top: 0%;
+    overflow: hidden;
   }
 
   .optionbtn ul li a {
@@ -691,6 +686,7 @@ body {
     color: #0906d4;
     padding-top: 0%;
     margin-top: 0%;
+    justify-content: space-between;
   }
 
   .top_bar {
