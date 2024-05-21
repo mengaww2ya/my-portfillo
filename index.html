@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 <body>
-    
-    <section class="page1" id="portfolio">
+ 
+    <section class="page1" >
         <div class="top_bar">
             <h3 class="logodesk">MG</h3>
     <div class="option"> 
@@ -17,17 +18,22 @@
       <a href="#contact" class="contat">contact</a>
      </div>
 </div>
-  <header class="status_bar">
-         <h3 class="logo">MG</h3>
-         <div class="btn">
-          <button class="icon"><img src="svg/Icons_Icon - Menu.png" class="iconoption">
-        <div class="optionbtn"> 
-            <a href="#portfolio" class="port">portfolio </a> 
-            <a href="#about" class="about">about</a>
-            <a href="#contact" class="contat">contact</a>
-           </div>
-                </button>
-  </header >
+<header class="status_bar">
+  <h3 class="logo">MG</h3>
+  <a href="#" class="buton" onclick=displayOption(MouseEvent)>
+   <span class="boton"></span>
+   <span class="boton"></span>
+   <span class="boton"></span>
+  </a>
+ <div class="optionbtn">
+   <ul>
+     <img src="images/x.png"  class="xx" onclick=closeOption()>
+<li><a href="#portfolio" class="port" onclick=diplayNone(event)>portfolio </a></li>
+<li><a href="#about" class="about" onclick=diplayNone(event)>about</a></li>
+<li><a href="#contact" class="contat" onclick=diplayNone(event)>contact</a></li>
+</ul>
+  </div>
+</header >
   <section class="deskimges_up">   
   </section>
   <section class="content_desk">
@@ -51,6 +57,7 @@
           <a href="" class="medium"><img src="images/medium.svg" alt="mymedium"></a>&nbsp;&nbsp;&nbsp;
           <a href="https://github.com/mengaww2ya" class="gihub"><img src="images/github.svg" alt="mygithub"></a>&nbsp;&nbsp;&nbsp;
           <a href="" class="angelist"><img src="images/angellist.svg" alt="myangellist"></a>&nbsp;&nbsp;&nbsp;
+          <a></a>
       </div>
           </section>
        </section> 
@@ -62,7 +69,7 @@
 <section  class="last_bottom"></section>
 </section>
     </section>
-    <section class="my_work_section">
+    <section class="my_work_section" id="portfolio">
     <!-- page2 -->
     <section class="page_flex">
 

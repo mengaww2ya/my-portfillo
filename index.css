@@ -17,22 +17,6 @@ body {
     height: 100%;
   }
 
-  .iconoption {
-    width: 10px;
-  }
-
-  .btn a {
-    display: none;
-    color: rgb(3, 2, 2);
-    text-decoration: none;
-    font-size: 14px;
-  }
-
-  .socio_m a:hover {
-    background-color: blue;
-    color: white;
-  }
-
   h2 {
     color: #6070ff;
   }
@@ -54,58 +38,6 @@ body {
       url(svg/Ellipse\ 5.svg) no-repeat top center,
       url(svg/rectangl7.png) no-repeat top center,
       url(svg/Ellipse\ 8.svg) no-repeat top center;
-  }
-
-  /* am trying to make hovver butoon option */
-  .btn {
-    fill: #6070ff;
-    border: #fff;
-    float: right;
-    margin-left: 82%;
-    margin-top: 0;
-    padding-top: 0;
-    position: fixed;
-  }
-
-  .btn:hover .content {
-    display: block;
-    margin-left: 0;
-  }
-
-  .btn:hover a {
-    display: inline-block;
-    background-color: white;
-  }
-
-  .btn a:hover {
-    background-color: orangered;
-    padding-left: 0%;
-  }
-
-  .option {
-    display: none;
-  }
-
-  .icon:hover .option {
-    display: block;
-
-    .btn .icon {
-      display: none;
-    }
-  }
-
-  .logo {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 111%;
-    color: #6070ff;
-    width: 70px;
-    height: auto;
-    float: left;
-    margin-right: 100%;
-    margin-top: 0;
-    position: fixed;
   }
 
   .intro {
@@ -138,15 +70,101 @@ body {
     float: right;
   }
 
-  .status_bar2 {
+  .optionbtn {
+    width: 100%;
+    height: 100vh;
+    background-color: #c6cbd6;
+    float: right;
+    display: none;
+    position: fixed;
+    text-align: end;
+    margin-top: 30px;
+  }
+
+  .optionbtn ul {
+    display: block;
+    color: white;
+    float: right;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .optionbtn ul li {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  .optionbtn li a {
+    text-decoration: none;
+    color: rgb(7, 5, 5);
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 30px;
+  }
+
+  .optionbtn li:hover {
+    background-color: rgb(194, 144, 9);
+  }
+
+  .optionbtn.active {
+    display: flex;
+  }
+
+  .xx {
+    cursor: pointer;
+    width: 30px;
+    height: 21px;
+    top: 15px;
+    right: 15px;
+    position: fixed;
+  }
+
+  .buton {
+    position: fixed;
+    top: 20px;
+    right: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+  }
+
+  .buton .boton {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(10, 38, 197);
+    border-radius: 10px;
+    display: flex;
+  }
+
+  .iconoption {
+    width: 20px;
+  }
+
+  .logo {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
     line-height: 111%;
     color: #6070ff;
+    width: 70px;
+    height: auto;
     float: left;
+    margin-right: 100%;
     margin-top: 0;
-    padding-top: 0;
+    position: fixed;
+  }
+
+  .option {
+    display: none;
+  }
+
+  .socio_m a:hover {
+    background-color: blue;
+    color: white;
   }
 
   .l9 {
@@ -636,8 +654,39 @@ body {
     float: right;
   }
 
-  .status_bar {
+  .optionbtn {
+    margin-left: 67%;
+    margin-top: 0%;
+    padding-top: 0%;
+    height: auto;
+    display: inline;
+    position: fixed;
+    flex-direction: row;
+    background-color: white;
+  }
+
+  .logo,
+  .xx,
+  .bullet {
     display: none;
+  }
+
+  .optionbtn ul {
+    display: inline;
+    display: flex;
+    flex-direction: row;
+    padding-top: 0%;
+    margin-top: 0%;
+    overflow: hidden;
+  }
+
+  .optionbtn ul li a {
+    display: flex;
+    flex-direction: row;
+    color: #0906d4;
+    padding-top: 0%;
+    margin-top: 0%;
+    justify-content: space-between;
   }
 
   .top_bar {
@@ -646,12 +695,12 @@ body {
     height: 110%;
 
     .option {
-      display: inline;
       float: right;
       position: fixed;
       margin-left: 80%;
       margin-top: 0;
       padding-top: 0;
+      display: none;
     }
 
     .logodesk {
