@@ -12,11 +12,6 @@
     <section class="page1" id="home" >
         <div class="top_bar">
             <h3 class="logodesk">MG</h3>
-    <div class="option"> 
-      <a href="#portfolio" class="port">portfolio </a> &nbsp;&nbsp;&nbsp;
-      <a href="#about" class="about">about</a>&nbsp;&nbsp;&nbsp;
-      <a href="#contact" class="contat">contact</a>
-     </div>
 </div>
 <header class="status_bar">
   <h3 class="logo">MG</h3>
@@ -324,15 +319,16 @@
   <!-- page 7 -->
     <section class="page7">
       <div class="contact_me" id="contact">
-        <form action="https://formspree.io/f/mqkrjpoe" method="post" class="myform">
+        <form action="https://formspree.io/f/mqkrjpoe" method="post" class="myform" id="mengaForm" onsubmit="return validateForm()">
 <h1 class="headcontact">Contact me</h1>
 <p class="p2">If you have an application you are interested in developing,
  a feature that you need built or a project that needs coding. 
 I’d love to help with it!</p>
-<input type="text" class="input_txt" placeholder="your full name" name="full name" maxlength="30" required><br>
-<input type="email" class="input_txt" placeholder="your email" required><br>
-<textarea name="message" class="input_idea"placeholder="what is your message here" required maxlength="500"></textarea><br>   
-<input type="submit" value="Get in touch" class="btn_getintech" >
+<input type="text" class="input_txt" placeholder="your full name" name="full name" maxlength="30" required id="name"><br>
+<input type="email" class="input_txt" placeholder="your email" required id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
+<textarea name="message" class="input_idea"placeholder="what is your message here" required maxlength="500" id="textarea"></textarea><br>   
+<input type="submit" value="Get in touch" class="btn_getintech" id="submit">
+<textarea name="fieldForError" id="fieldForError"></textarea>
 <img src="images/botom cont.png"  class="imagecont">
 </form>
       </div>
@@ -340,7 +336,7 @@ I’d love to help with it!</p>
     <div class="space_btwn_pages">
     <!-- space goes here to separet pages  -->
   </div>
-    <section class="tonic , page_flex">
+    <section class="tonic , page_flex" id="popup_mobil_sec">
       <ul>
       <li>
         <div class="photo">
@@ -368,13 +364,59 @@ I’d love to help with it!</p>
                 <a href="" class="l">javascript</a>
                   </div>
                   <div class="btn_b">
-                    <button class="btnu1">See live <img src="images/see live.png">
-                </button> <button class="btnu2">See source <img src="images/see source.png" class="small_img"></button>
+                    <button class="btnu1">See live <img src="images/see live.png"></button> 
+                    <button class="btnu2">See source <img src="images/see source.png" class="small_img"></button>
             </div>
 
         </div>
       </li>
       </ul>
+        </section>
+        <!-- pop up desktop -->
+        <section class="popup_desktopsec">
+            <div class="title2">
+              <h1>Tonic</h1>  
+            </div>
+            <div class="upper_titl2_pop">
+          <ul >
+            <b>CANOPY</b> 
+          <li>Back End Development</li>&nbsp;
+          <li>2015</li>
+        </ul>
+            </div>
+          <div>
+            <img src="svg/popupdesk.png" class="image_pop">
+          </div>
+<div class="pop_bottom_flex">
+          <div class="par_pop">
+            <p class="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+               when an unknown printer took a galley of type 
+              and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and 
+              typesetting industry. </p>
+              <p class="p1">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it 1960s with the 
+                releorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum han printer took a galley of type and scrambled it 
+                1960s with the releawn printer took a galley of type and scrambled it 1960s.
+              </p>
+
+          </div>
+          <div class="pop_botom_right">
+            <div class="btnlun_pop">
+              <a href="" class="l">HTML</a>
+              <a href="" class="l">Css</a>
+              <a href="" class="l">javascript</a>
+              <a href="" class="l">Ruby</a>
+              <a href="" class="l">Bootstrap</a>
+                </div>
+                <div class="btn_b">
+                  <button class="btnu1">See live <img src="images/see live.png"></button> 
+                  <button class="btnu2">See source <img src="images/see source.png" class="small_img"></button>
+          </div>
+          </div>
+        </div>
         </section>
 </body>
 </html>
