@@ -1,3 +1,11 @@
+function validateForm() {
+  const email = document.getElementById('email').value;
+  if (email !== email.toLowerCase()) {
+    document.getElementById('fieldForError').value = 'Email must be in lowercase.';
+    return false;
+  }
+  return true;
+}
 function displayOption() {
   const close = document.querySelector('.xx');
   const button = document.querySelector('.buton');
@@ -42,3 +50,5 @@ function diplayNone() {
 diplayNone(MouseEvent);
 displayOption();
 closeOption();
+
+validateForm();

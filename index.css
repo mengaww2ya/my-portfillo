@@ -3,6 +3,25 @@ body {
 }
 
 @media screen  and (min-width: 375px) {
+  .popup_desktopsec {
+    display: none;
+  }
+
+  #popup_mobil_sec {
+    display: none;
+  }
+
+  #fieldForError {
+    width: 50vw;
+    height: 10vh;
+    color: red;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 40px;
+    background-color: lightgrey;
+    border-radius: 8px;
+  }
+
   .page1 {
     border: 1px solid #dfe1e6;
     border-radius: 16px;
@@ -666,12 +685,14 @@ body {
     display: inline;
     position: fixed;
     flex-direction: row;
-    background-color: navajowhite;
+    background-color: transparent;
   }
 
+  .boton,
   .logo,
   .xx,
   .bullet {
+    visibility: hidden;
     display: none;
   }
 
@@ -766,6 +787,11 @@ body {
     background-color: #6070ff;
   }
 
+  .upper_titl2_pop ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
   #about {
     display: flex;
     justify-content: space-between;
@@ -778,6 +804,34 @@ body {
 
   .under_titl2_for_revers {
     flex-direction: row-reverse;
+  }
+
+  .image_pop {
+    width: 100%;
+    height: auto;
+  }
+
+  .pop_bottom_flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pop_botom_right {
+    width: 100%;
+    height: auto;
+  }
+
+  .par_pop {
+    margin: 3% 5%;
+  }
+
+  .btnlun_pop {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .popup_desktop_sec {
+    display: none;
   }
 }
 
